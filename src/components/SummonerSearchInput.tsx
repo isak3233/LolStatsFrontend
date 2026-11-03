@@ -10,7 +10,7 @@ export default function SummonerSearchInput() {
 
     function handleClick() {
         if(!validateSummonerGameTag(summonerGameTag)) {
-            setError("Name must include # and the name and tag need to have 3 characters or more");
+            setError("Name must include ONE # and the name and tag need to have 3 characters or more");
             return;
         }
         router.push("/summoner/" + encodeURIComponent(summonerGameTag));
